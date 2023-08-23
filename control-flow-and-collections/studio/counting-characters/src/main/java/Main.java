@@ -14,10 +14,7 @@ public class Main {
         String[] letters = quote.split("");
 
 
-        ArrayList<String> listLetters = new ArrayList<>();
-        for (int i = 0; i < letters.length; i++) {
-            listLetters.add(letters[i]);
-        }
+        ArrayList<String> listLetters = new ArrayList<>(Arrays.asList(letters));
 
 
         HashMap<String, Integer> hashList = new HashMap<>();
