@@ -6,6 +6,7 @@ public class MenuItem {
     private String category;
     private boolean isNew;
 
+
     public MenuItem(double p, String d, String c, boolean iN) {
         this.price = p;
         this.description = d;
@@ -27,6 +28,19 @@ public class MenuItem {
 
     public void setNew(boolean aNew) {
         isNew = aNew;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+    public String getDescription() {
+        return  description;
+    }
+    public String getCategory() {
+        return  category;
+    }
+    public boolean getNew() {
+        return isNew;
     }
 }
 
