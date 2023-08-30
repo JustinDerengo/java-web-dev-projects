@@ -38,6 +38,7 @@ public class Menu {
         return items;
     }
 
+
     public void addItem (double price, String description, String category) {
         try {
             MenuItem menuItem = new MenuItem(price, description, category, true);
