@@ -11,8 +11,8 @@ abstract class Question {
         System.out.println(question);
     }
 
-    abstract void displayPossibleAnswers()
-            ;
+    abstract void displayPossibleAnswers();
+
     public boolean isCorrect(String[] userAnswers) {
         if (correctAnswers.length != userAnswers.length) {
             return false;
