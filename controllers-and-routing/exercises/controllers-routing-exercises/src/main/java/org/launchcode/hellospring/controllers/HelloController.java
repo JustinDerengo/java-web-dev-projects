@@ -6,14 +6,14 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class HelloController {
 
-//    @RequestMapping(value="")
-//    @ResponseBody
-//    public String index(@RequestParam String name) {
-//        if (name == null) {
-//            name = "World";
-//        }
-//        return "Hello " + name;
-//    }
+    @RequestMapping(value="")
+    @ResponseBody
+    public String index(@RequestParam String name) {
+        if (name == null) {
+            name = "World";
+        }
+        return "Hello " + name;
+    }
 
     @RequestMapping(value="hello", method = RequestMethod.GET)
     @ResponseBody
